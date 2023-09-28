@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f79014bf-9288-490b-97cb-eb3d0f392137" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49815/StockBuildService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StockBuildService.disco" MetadataType="Disco" ID="c9c7e9f3-74af-4a2a-9325-e292a1ab2b3e" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?disco" />
+    <MetadataFile FileName="StockBuildService.wsdl" MetadataType="Wsdl" ID="3cddc831-94c6-4a45-990e-8bb352a906b5" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?wsdl" />
+    <MetadataFile FileName="StockBuildService.xsd" MetadataType="Schema" ID="0479a70d-18a2-448f-9a41-15817f5a3782" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StockBuildService1.xsd" MetadataType="Schema" ID="ea7d0299-0135-44d9-90ef-ed9c9c496ef8" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

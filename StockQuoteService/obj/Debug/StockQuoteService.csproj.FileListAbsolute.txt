@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\bin\StockQuoteService.dll.config
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\bin\StockQuoteService.dll
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\bin\StockQuoteService.pdb
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\obj\Debug\StockQuoteService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\obj\Debug\StockQuoteService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\obj\Debug\StockQuoteService.dll
+C:\Users\Administrator\source\repos\Project3\StockQuoteService\obj\Debug\StockQuoteService.pdb

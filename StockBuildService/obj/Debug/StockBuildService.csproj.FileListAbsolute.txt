@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\Project3\StockBuildService\bin\StockBuildService.dll.config
+C:\Users\Administrator\source\repos\Project3\StockBuildService\bin\StockBuildService.dll
+C:\Users\Administrator\source\repos\Project3\StockBuildService\bin\StockBuildService.pdb
+C:\Users\Administrator\source\repos\Project3\StockBuildService\obj\Debug\StockBuildService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Project3\StockBuildService\obj\Debug\StockBuildService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Project3\StockBuildService\obj\Debug\StockBuildService.dll
+C:\Users\Administrator\source\repos\Project3\StockBuildService\obj\Debug\StockBuildService.pdb
