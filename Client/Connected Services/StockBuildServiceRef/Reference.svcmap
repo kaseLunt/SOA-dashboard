@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f79014bf-9288-490b-97cb-eb3d0f392137" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fe1b1847-2121-4259-81ac-623285d3e271" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:49815/StockBuildService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="StockBuildService.disco" MetadataType="Disco" ID="c9c7e9f3-74af-4a2a-9325-e292a1ab2b3e" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?disco" />
-    <MetadataFile FileName="StockBuildService.wsdl" MetadataType="Wsdl" ID="3cddc831-94c6-4a45-990e-8bb352a906b5" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?wsdl" />
-    <MetadataFile FileName="StockBuildService.xsd" MetadataType="Schema" ID="0479a70d-18a2-448f-9a41-15817f5a3782" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd1" />
-    <MetadataFile FileName="StockBuildService1.xsd" MetadataType="Schema" ID="ea7d0299-0135-44d9-90ef-ed9c9c496ef8" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StockBuildService.disco" MetadataType="Disco" ID="b9756830-80e8-49e8-bb1e-958f6b33e1c4" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?disco" />
+    <MetadataFile FileName="StockBuildService.wsdl" MetadataType="Wsdl" ID="dd7d581e-2013-4744-b257-d10e339f0b6e" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?wsdl" />
+    <MetadataFile FileName="StockBuildService.xsd" MetadataType="Schema" ID="4e3f443d-a416-4e0e-b004-5303b6df3623" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StockBuildService1.xsd" MetadataType="Schema" ID="f65b3cca-f86e-45ff-a637-925d0c1e2d40" SourceId="1" SourceUrl="http://localhost:49815/StockBuildService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

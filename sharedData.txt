@@ -1,2 +1,7 @@
 AAPL|120.3
 googl|120.3
+AAPL|120.3
+amzn|120.3
+AAPL|120.3
+aapl|120.3
+googl|120.3

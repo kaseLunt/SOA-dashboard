@@ -55,6 +55,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\WeatherServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +79,13 @@
     <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\WeatherServiceRef\WeatherService.wsdl" />
+    <None Include="Connected Services\WeatherServiceRef\WeatherService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WeatherServiceRef\WeatherService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -81,6 +93,22 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\StockBuildServiceRef\" />
     <WCFMetadataStorage Include="Connected Services\StockQuoteServiceRef\" />
+    <WCFMetadataStorage Include="Connected Services\WeatherServiceRef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StockBuildServiceRef\StockBuildService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StockBuildServiceRef\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StockBuildServiceRef\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\StockBuildServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService.disco" />
@@ -98,16 +126,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\StockBuildService.disco" />
+    <None Include="Connected Services\WeatherServiceRef\WeatherService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\configuration91.svcinfo" />
+    <None Include="Connected Services\WeatherServiceRef\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\configuration.svcinfo" />
+    <None Include="Connected Services\WeatherServiceRef\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\Reference.svcmap">
+    <None Include="Connected Services\WeatherServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
