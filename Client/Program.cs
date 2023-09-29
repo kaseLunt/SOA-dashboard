@@ -1,8 +1,10 @@
 ﻿using Client.StockBuildServiceRef;
 using Client.StockQuoteServiceRef;
 using Client.WeatherServiceRef;
+using Client.NewsSearchServiceRef;
 using System;
 using System.IO;
+using System.Net;
 
 namespace Client
 {
@@ -34,11 +36,20 @@ namespace Client
                 Console.WriteLine("File creation failed or the service couldn't read the stock price.");
             }
 
-            // Invoke GetWeather operation 
+            // Test WeatherService 
             WeatherServiceClient weatherClient = new WeatherServiceClient();
             Console.WriteLine(weatherClient.GetWeather(85282));
 
-            Console.ReadKey();
+            // Test NewsSearchService
+            Console.Write("Enter a search term for news: ");
+            string searchString = Console.ReadLine();
+            NewsSearchServiceClient newsClient = new NewsSearchServiceClient();
+
+            Console.WriteLine(newsClient.GetNews(searchString));
+
+
+
+            
         }
     }
 }

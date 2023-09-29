@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\bin\NewsSearchService.dll.config
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\bin\NewsSearchService.dll
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\bin\NewsSearchService.pdb
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\obj\Debug\NewsSearchService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\obj\Debug\NewsSearchService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\obj\Debug\NewsSearchService.dll
+C:\Users\Administrator\source\repos\Project3\NewsSearchService\obj\Debug\NewsSearchService.pdb

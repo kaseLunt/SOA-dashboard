@@ -10,11 +10,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 		{0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069} = {0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069}
 		{3B84B1E7-414B-4EF7-9E4D-74A07B08B51A} = {3B84B1E7-414B-4EF7-9E4D-74A07B08B51A}
 		{525F47D6-453E-42F4-8FCB-6A2F8B45B67C} = {525F47D6-453E-42F4-8FCB-6A2F8B45B67C}
+		{7BDA0891-E833-4F65-962B-45442E07809F} = {7BDA0891-E833-4F65-962B-45442E07809F}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockQuoteService", "StockQuoteService\StockQuoteService.csproj", "{3B84B1E7-414B-4EF7-9E4D-74A07B08B51A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherService\WeatherService.csproj", "{0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsSearchService", "NewsSearchService\NewsSearchService.csproj", "{7BDA0891-E833-4F65-962B-45442E07809F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +41,10 @@ Global
 		{0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AAEF10A-B2B6-4D56-8C7F-DA3EB5EC4069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDA0891-E833-4F65-962B-45442E07809F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDA0891-E833-4F65-962B-45442E07809F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDA0891-E833-4F65-962B-45442E07809F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDA0891-E833-4F65-962B-45442E07809F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
