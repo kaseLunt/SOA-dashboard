@@ -13,3 +13,5 @@ aapl|120.3
 aapl|120.3
 aapl|120.3
 tsla|120.3
+aapl|120.3
+tsla|120.3
