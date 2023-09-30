@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace WeatherService
 {
@@ -14,16 +15,13 @@ namespace WeatherService
                 using (HttpClient client = new HttpClient())
                 {
                     // Set the base URL for the weather API
-                    string baseUrl = "https://weatherapi-com.p.rapidapi.com/";
-
-                    // Set the zip code as a query parameter
-                    string zipParameter = $"zip={zipcode}";
+                    string baseUrl = "https://weatherapi-com.p.rapidapi.com/current.json";
 
                     // Construct the complete URL with query parameters
-                    string apiUrl = baseUrl + "?" + zipParameter;
+                    string apiUrl = baseUrl + "?q=" + zipcode;
 
                     // Set the required headers
-                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "SIGN-UP-FOR-KEY");
+                    client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "YOUR_RAPIDAPI_KEY");
                     client.DefaultRequestHeaders.Add("X-RapidAPI-Host", "weatherapi-com.p.rapidapi.com");
 
                     // Send a GET request to the weather API
@@ -52,54 +50,56 @@ namespace WeatherService
             }
         }
 
+        // Define a class that matches the structure of the JSON response
+        public class WeatherResponseModel
+        {
+            public CurrentModel current { get; set; }
+        }
+
+        public class CurrentModel
+        {
+            public string temp_c { get; set; }
+            public ConditionModel condition { get; set; }
+        }
+
+        public class ConditionModel
+        {
+            public string text { get; set; }
+        }
+
         // Implement a method to parse the JSON response and extract the weather data
-       private string ParseWeatherData(string jsonContent)
-{
-    try
-    {
-        // Deserialize the JSON response into a suitable model class
-        var weatherData = JsonConvert.DeserializeObject<WeatherResponseModel>(jsonContent);
-
-        // Assuming that the JSON structure includes a "forecast" property for the 5-day forecast
-        // Replace "YourWeatherModel" with the actual class that matches the JSON structure
-        // You should adjust the property names according to the actual JSON structure
-        var forecast = weatherData?.forecast?.fiveDayForecast;
-
-        if (forecast != null && forecast.Length > 0)
+        private string ParseWeatherData(string jsonContent)
         {
-            // Create a StringBuilder to build the weather data
-            StringBuilder weatherStringBuilder = new StringBuilder();
-
-            // Iterate through the 5-day forecast and extract the relevant information
-            foreach (var dailyForecast in forecast)
+            try
             {
-                // Access properties like date, temperature, conditions, etc.
-                string date = dailyForecast.date;
-                string temperature = dailyForecast.temperature;
-                string conditions = dailyForecast.conditions;
+                // Deserialize the JSON response into a suitable model class
+                var weatherData = JsonConvert.DeserializeObject<WeatherResponseModel>(jsonContent);
 
-                // Build the weather data for each day
-                string dayWeather = $"Date: {date}, Temperature: {temperature}, Conditions: {conditions}";
+                if (weatherData != null && weatherData.current != null)
+                {
+                    // Extract the temperature and condition information
+                    string temperature = weatherData.current.temp_c;
+                    string conditions = weatherData.current.condition.text;
 
-                // Append to the StringBuilder
-                weatherStringBuilder.AppendLine(dayWeather);
+                    // Build the weather data string
+                    string weatherInfo = $"Temperature: {temperature}°C, Conditions: {conditions}";
+
+                    return weatherInfo;
+                }
+                else
+                {
+                    return "No weather data available.";
+                }
             }
-
-            // Return the compiled weather data
-            return weatherStringBuilder.ToString();
+            catch (JsonException ex)
+            {
+                return $"Error parsing JSON: {ex.Message}";
+            }
         }
-        else
+
+        string IWeatherService.GetWeather(int zipcode)
         {
-            return "No forecast data available.";
+            throw new NotImplementedException();
         }
     }
-    catch (JsonException ex)
-    {
-        return $"Error parsing JSON: {ex.Message}";
-    }
 }
-
-    }
-}
-
-
