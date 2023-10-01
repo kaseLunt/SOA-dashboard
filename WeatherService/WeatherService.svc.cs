@@ -1,20 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
+using System.Net;
+using System.Web.Script.Serialization;
 
 namespace WeatherService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class WeatherService : IWeatherService
     {
-        public string GetWeather(int zipcode )
+        private const string OPEN_WEATHER_API_KEY = "ac1c71d0ab3a8427549f2e3ab357c68d";
+
+        public string GetWeather(int zipcode)
         {
-            return $"sunny in {zipcode}";
+            string apiUrl = $"https://api.openweathermap.org/data/2.5/forecast?zip={zipcode},us&appid={OPEN_WEATHER_API_KEY}";
+            string response = FetchWeatherData(apiUrl);
+
+            // Deserialize and format the data
+            var jsonData = new JavaScriptSerializer().Deserialize<dynamic>(response);
+            List<string> forecasts = new List<string>();
+            HashSet<string> processedDates = new HashSet<string>();
+
+            foreach (var forecast in jsonData["list"])
+            {
+                string date = Convert.ToDateTime(forecast["dt_txt"]).ToString("yyyy-MM-dd");
+
+                // Check if the date has already been processed
+                if (!processedDates.Contains(date))
+                {
+                    processedDates.Add(date);
+                    string weatherDescription = forecast["weather"][0]["description"];
+                    double temperatureKelvin = Convert.ToDouble(forecast["main"]["temp"]);
+                    double temperatureCelsius = temperatureKelvin - 273.15;
+
+                    forecasts.Add($"Date: {date}, Weather: {weatherDescription}, Temperature: {temperatureCelsius:0.##}°C");
+                }
+
+                if (processedDates.Count >= 5) break;
+            }
+
+            return string.Join("\n", forecasts);
+        }
+
+        private string FetchWeatherData(string apiUrl)
+        {
+            using (WebClient client = new WebClient())
+            {
+                return client.DownloadString(apiUrl);
+            }
         }
     }
 }
