@@ -8,13 +8,13 @@ C:\Users\Administrator\source\repos\Project3\Client\obj\Debug\Client.pdb
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\Client.exe.config
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\Client.exe
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\Client.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.xml
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\obj\Debug\Client.csproj.AssemblyReference.cache
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\obj\Debug\Client.exe
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\obj\Debug\Client.pdb
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.dll
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.pdb
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\Client\bin\Debug\HtmlAgilityPack.xml

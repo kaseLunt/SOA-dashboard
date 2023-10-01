@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f61029d7-edc9-45f6-a359-d39bd7a8ea2f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="3afc2322-7646-46c3-8a1e-7b8476ece3a3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,11 @@
     <MetadataSource Address="http://localhost:50346/NewsSearchService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="NewsSearchService.xsd" MetadataType="Schema" ID="cd23da64-a0ca-462f-8551-835ea6fe8953" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd1" />
-    <MetadataFile FileName="NewsSearchService.wsdl" MetadataType="Wsdl" ID="b842a5b2-a0e0-40b6-9c0e-8d2f9c08d1e7" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?wsdl" />
-    <MetadataFile FileName="NewsSearchService.disco" MetadataType="Disco" ID="31d1497d-59b3-45d7-a29f-5222179c9781" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?disco" />
-    <MetadataFile FileName="NewsSearchService1.xsd" MetadataType="Schema" ID="488cae9f-4929-4be1-aa1c-a9abfce72efe" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NewsSearchService.xsd" MetadataType="Schema" ID="9eafea83-7706-4e68-9b17-03b4b7cd1a23" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NewsSearchService1.xsd" MetadataType="Schema" ID="11f5cee1-2be5-4df3-ba1c-8c9c504f1475" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NewsSearchService.wsdl" MetadataType="Wsdl" ID="9b24a88b-956e-4eb1-9f5a-634289cf6679" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?wsdl" />
+    <MetadataFile FileName="NewsSearchService.disco" MetadataType="Disco" ID="da72dfa0-dfc5-4be8-bbec-5827273a4a57" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?disco" />
+    <MetadataFile FileName="NewsSearchService2.xsd" MetadataType="Schema" ID="4a96c7f3-3678-4a09-bcb1-a0e59128cd50" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

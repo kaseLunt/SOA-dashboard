@@ -11,12 +11,7 @@ namespace NewsSearchService
     [ServiceContract]
     public interface INewsSearchService
     {
-
         [OperationContract]
-        string GetNews(string searchString);
-
+        List<string> GetNews(string searchString);
     }
-
-
-
 }

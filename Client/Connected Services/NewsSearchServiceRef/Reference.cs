@@ -16,10 +16,10 @@ namespace Client.NewsSearchServiceRef {
     public interface INewsSearchService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INewsSearchService/GetNews", ReplyAction="http://tempuri.org/INewsSearchService/GetNewsResponse")]
-        string GetNews(string searchString);
+        string[] GetNews(string searchString);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INewsSearchService/GetNews", ReplyAction="http://tempuri.org/INewsSearchService/GetNewsResponse")]
-        System.Threading.Tasks.Task<string> GetNewsAsync(string searchString);
+        System.Threading.Tasks.Task<string[]> GetNewsAsync(string searchString);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49,11 +49,11 @@ namespace Client.NewsSearchServiceRef {
                 base(binding, remoteAddress) {
         }
         
-        public string GetNews(string searchString) {
+        public string[] GetNews(string searchString) {
             return base.Channel.GetNews(searchString);
         }
         
-        public System.Threading.Tasks.Task<string> GetNewsAsync(string searchString) {
+        public System.Threading.Tasks.Task<string[]> GetNewsAsync(string searchString) {
             return base.Channel.GetNewsAsync(searchString);
         }
     }

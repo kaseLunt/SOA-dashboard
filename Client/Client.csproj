@@ -118,6 +118,9 @@
     <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\StockBuildServiceRef\StockBuildService.wsdl" />
     <None Include="Connected Services\StockBuildServiceRef\StockBuildService.xsd">
       <SubType>Designer</SubType>
@@ -181,21 +184,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Connected Services\StockBuildServiceRef\StockBuildService.disco" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +194,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\StockBuildServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\NewsSearchServiceRef\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\NewsSearchServiceRef\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\NewsSearchServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

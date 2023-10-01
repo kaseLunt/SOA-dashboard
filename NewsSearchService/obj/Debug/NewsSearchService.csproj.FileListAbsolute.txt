@@ -8,13 +8,13 @@ C:\Users\Administrator\source\repos\Project3\NewsSearchService\obj\Debug\NewsSea
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\NewsSearchService.dll.config
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\NewsSearchService.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\NewsSearchService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.xml
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\Newtonsoft.Json.xml
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\obj\Debug\NewsSearchService.csproj.AssemblyReference.cache
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\obj\Debug\NewsSearchService.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\obj\Debug\NewsSearchService.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\obj\Debug\NewsSearchService.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\obj\Debug\NewsSearchService.pdb
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.dll
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.pdb
-C:\Users\Administrator\Source\Repos\SOA-dashboard_group\NewsSearchService\bin\HtmlAgilityPack.xml
