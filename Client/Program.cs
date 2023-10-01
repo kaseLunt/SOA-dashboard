@@ -24,6 +24,7 @@ namespace Client
             if (File.Exists(filePath))
             {
                 Console.WriteLine("File created successfully.");
+                Console.WriteLine(filePath);
 
                 // Now invoke the StockQuote operation to fetch the stock price
                 StockQuoteServiceClient quoteClient = new StockQuoteServiceClient();
