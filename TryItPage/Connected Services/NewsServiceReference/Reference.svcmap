@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="5ae4e8b8-9ff8-44bc-bbba-762974e10123" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50346/NewsSearchService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NewsSearchService.xsd" MetadataType="Schema" ID="53d86e75-9a82-4970-ad9f-f3ed7a8c881e" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NewsSearchService1.xsd" MetadataType="Schema" ID="7bf5db62-a11d-4532-89eb-10d86096c3d6" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NewsSearchService.wsdl" MetadataType="Wsdl" ID="db149d36-c32c-413a-ba58-8a25a947fd81" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?wsdl" />
+    <MetadataFile FileName="NewsSearchService.disco" MetadataType="Disco" ID="4d2f679d-9e0e-4b50-aab1-47e5ea8e7d87" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?disco" />
+    <MetadataFile FileName="NewsSearchService2.xsd" MetadataType="Schema" ID="2c3e9042-3891-492f-bab0-b5bc8ee7f8e9" SourceId="1" SourceUrl="http://localhost:50346/NewsSearchService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

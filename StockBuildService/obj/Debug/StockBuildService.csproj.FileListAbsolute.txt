@@ -18,3 +18,16 @@ C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockBuildService\obj\De
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockBuildService\obj\Debug\StockBuildService.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockBuildService\obj\Debug\StockBuildService.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockBuildService\obj\Debug\StockBuildService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\StockBuildService.dll.config
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\StockBuildService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\StockBuildService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\obj\Debug\StockBuildService.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\obj\Debug\StockBuildService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\obj\Debug\StockBuildService.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\obj\Debug\StockBuildService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockBuildService\obj\Debug\StockBuildService.pdb

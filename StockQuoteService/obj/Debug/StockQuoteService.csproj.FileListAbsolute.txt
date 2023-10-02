@@ -18,3 +18,16 @@ C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockQuoteService\obj\De
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockQuoteService\obj\Debug\StockQuoteService.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockQuoteService\obj\Debug\StockQuoteService.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\StockQuoteService\obj\Debug\StockQuoteService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\StockQuoteService.dll.config
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\StockQuoteService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\StockQuoteService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\obj\Debug\StockQuoteService.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\obj\Debug\StockQuoteService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\obj\Debug\StockQuoteService.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\obj\Debug\StockQuoteService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\StockQuoteService\obj\Debug\StockQuoteService.pdb

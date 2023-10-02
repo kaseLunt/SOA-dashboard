@@ -18,3 +18,16 @@ C:\Users\Administrator\Source\Repos\SOA-dashboard_group\WeatherService\obj\Debug
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\WeatherService\obj\Debug\WeatherService.csproj.CopyComplete
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\WeatherService\obj\Debug\WeatherService.dll
 C:\Users\Administrator\Source\Repos\SOA-dashboard_group\WeatherService\obj\Debug\WeatherService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\WeatherService.dll.config
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\WeatherService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\WeatherService.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\obj\Debug\WeatherService.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\obj\Debug\WeatherService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\obj\Debug\WeatherService.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\obj\Debug\WeatherService.dll
+C:\Users\Administrator\Source\Repos\SOA-dashboard-js\WeatherService\obj\Debug\WeatherService.pdb

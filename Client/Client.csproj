@@ -213,5 +213,19 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewsSearchService\NewsSearchService.csproj">
+      <Project>{7bda0891-e833-4f65-962b-45442e07809f}</Project>
+      <Name>NewsSearchService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TryItPage\TryItPage.csproj">
+      <Project>{53c9b6cb-7a38-4d39-9561-61daf2124c5d}</Project>
+      <Name>TryItPage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherService\WeatherService.csproj">
+      <Project>{0aaef10a-b2b6-4d56-8c7f-da3eb5ec4069}</Project>
+      <Name>WeatherService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
