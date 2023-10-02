@@ -12,6 +12,7 @@
         
             <!-- Input textbox for user's name -->
             <h1>All In One Place News Dashboard</h1>
+            <h2>Weather and News Dashboard</h2>
             <h1>Weather Serive</h1>
             <label for="txtName">Enter the Zipcode:</label>
             <asp:TextBox ID="txtName" runat="server" type="number" maxlength="5" pattern="\d{5}" placeholder="Enter 5-Digit Zipcode" ></asp:TextBox>
