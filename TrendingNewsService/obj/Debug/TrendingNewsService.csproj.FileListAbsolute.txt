@@ -1,0 +1,15 @@
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\TrendingNewsService.dll.config
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\TrendingNewsService.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\TrendingNewsService.pdb
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\HtmlAgilityPack.pdb
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\obj\Debug\TrendingNewsService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\obj\Debug\TrendingNewsService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\obj\Debug\TrendingNewsService.csproj.CopyComplete
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\obj\Debug\TrendingNewsService.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsService\obj\Debug\TrendingNewsService.pdb

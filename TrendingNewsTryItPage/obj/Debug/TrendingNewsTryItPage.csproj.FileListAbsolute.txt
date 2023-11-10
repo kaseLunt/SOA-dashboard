@@ -1,0 +1,2 @@
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsTryItPage\obj\Debug\TrendingNewsTryItPage.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\SOA-dashboard-js\TrendingNewsTryItPage\obj\Debug\TrendingNewsTryItPage.csproj.CoreCompileInputs.cache

@@ -45,12 +45,48 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
@@ -115,6 +151,23 @@
     <None Include="Connected Services\NewsServiceReference\NewsSearchService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\NewsServiceReference\NewsSearchService.disco" />
+    <None Include="Connected Services\NewsServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\NewsServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\NewsServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.wsdl" />
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\WeatherServiceReference\WeatherService.disco" />
     <None Include="Connected Services\WeatherServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\WeatherServiceReference\configuration.svcinfo" />
@@ -122,10 +175,17 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService.disco" />
-    <None Include="Connected Services\NewsServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\NewsServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\NewsServiceReference\Reference.svcmap">
+    <None Include="Connected Services\WordCountServiceReference\Service1.disco" />
+    <None Include="Connected Services\WordCountServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\WordCountServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\WordCountServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.disco" />
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\TrendingNewsServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -185,6 +245,19 @@
     <None Include="Connected Services\WeatherServiceReference\WeatherService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\WordCountServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\WordCountServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WordCountServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WordCountServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\WordCountServiceReference\TryItPage.WordCountServiceReference.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -234,7 +307,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\TrendingNewsServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WeatherServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WordCountServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -285,6 +368,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WeatherServiceClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -305,7 +389,27 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\NewsServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\TrendingNewsServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WeatherServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\WordCountServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewsSearchService\NewsSearchService.csproj">
+      <Project>{7bda0891-e833-4f65-962b-45442e07809f}</Project>
+      <Name>NewsSearchService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrendingNewsService\TrendingNewsService.csproj">
+      <Project>{db4f7a24-dcf9-468a-b37b-cba2e63df992}</Project>
+      <Name>TrendingNewsService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeatherService\WeatherService.csproj">
+      <Project>{0aaef10a-b2b6-4d56-8c7f-da3eb5ec4069}</Project>
+      <Name>WeatherService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WordCountService\WordCountService.csproj">
+      <Project>{a497b5f8-e6b0-468a-9282-f569df460a8a}</Project>
+      <Name>WordCountService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -91,17 +106,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\StockBuildServiceRef\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\StockQuoteServiceRef\Reference.cs">
+    <Compile Include="Connected Services\TrendingNewsServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\WeatherServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WordCountServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -121,18 +136,14 @@
     <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\StockBuildServiceRef\StockBuildService.wsdl" />
-    <None Include="Connected Services\StockBuildServiceRef\StockBuildService.xsd">
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.wsdl" />
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\StockBuildServiceRef\StockBuildService1.xsd">
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService.wsdl" />
-    <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService1.xsd">
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\WeatherServiceRef\WeatherService.wsdl" />
@@ -142,31 +153,27 @@
     <None Include="Connected Services\WeatherServiceRef\WeatherService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\WordCountServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\WordCountServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WordCountServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WordCountServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\TrendingNewsService.CompositeType.datasource" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\NewsSearchServiceRef\" />
-    <WCFMetadataStorage Include="Connected Services\StockBuildServiceRef\" />
-    <WCFMetadataStorage Include="Connected Services\StockQuoteServiceRef\" />
+    <WCFMetadataStorage Include="Connected Services\TrendingNewsServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WeatherServiceRef\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockQuoteServiceRef\StockQuoteService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockQuoteServiceRef\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockQuoteServiceRef\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockQuoteServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    <WCFMetadataStorage Include="Connected Services\WordCountServiceReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WeatherServiceRef\WeatherService.disco" />
@@ -179,21 +186,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WeatherServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\StockBuildService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\StockBuildServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -218,6 +210,10 @@
       <Project>{7bda0891-e833-4f65-962b-45442e07809f}</Project>
       <Name>NewsSearchService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TrendingNewsService\TrendingNewsService.csproj">
+      <Project>{db4f7a24-dcf9-468a-b37b-cba2e63df992}</Project>
+      <Name>TrendingNewsService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TryItPage\TryItPage.csproj">
       <Project>{53c9b6cb-7a38-4d39-9561-61daf2124c5d}</Project>
       <Name>TryItPage</Name>
@@ -226,6 +222,52 @@
       <Project>{0aaef10a-b2b6-4d56-8c7f-da3eb5ec4069}</Project>
       <Name>WeatherService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WordCountService\WordCountService.csproj">
+      <Project>{a497b5f8-e6b0-468a-9282-f569df460a8a}</Project>
+      <Name>WordCountService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WordCountServiceReference\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WordCountServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WordCountServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WordCountServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\TrendingNewsServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

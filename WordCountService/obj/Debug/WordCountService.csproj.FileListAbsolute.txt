@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\bin\WordCountService.dll.config
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\bin\WordCountService.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\bin\WordCountService.pdb
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\obj\Debug\WordCountService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\obj\Debug\WordCountService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\obj\Debug\WordCountService.csproj.CopyComplete
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\obj\Debug\WordCountService.dll
+C:\Users\Administrator\source\repos\SOA-dashboard-js\WordCountService\obj\Debug\WordCountService.pdb

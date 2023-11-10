@@ -6,6 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using TryItPage.WeatherServiceReference;
 using TryItPage.NewsServiceReference;
+using TrendingNewsService;
+using System.IO;
+using System.Text;
+using System.Web.Script.Serialization;
+using TryItPage.TrendingNewsServiceReference;
 
 namespace TryItPage
 {
@@ -14,6 +19,63 @@ namespace TryItPage
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+        }
+
+
+        protected void btnSubmit_Click3(object sender, EventArgs e)
+        {
+                TrendingNewsServiceClient client = new TrendingNewsServiceClient();
+                string jsonData = client.GetTrendingNews();
+
+                if (!string.IsNullOrEmpty(jsonData))
+                {
+                
+                    // Deserialize JSON to C# object
+                    JavaScriptSerializer serializer = new JavaScriptSerializer();
+        RootObject data = serializer.Deserialize<RootObject>(jsonData);
+
+                    if (data != null && data.articles != null)
+                    {
+                        // Bind the data to the GridView
+                        gvNews.DataSource = data.articles;
+                        gvNews.DataBind();
+                    }
+                    else
+                    {
+                        lblMessage.Text = "No News Available";
+                    }
+                }
+                else
+{
+    lblMessage.Text = "Failed to fetch news data.";
+}
+            }
+
+
+        public class RootObject
+        {
+            public string status { get; set; }
+            public int totalResults { get; set; }
+            public List<Article> articles { get; set; }
+        }
+
+        public class Source
+        {
+            public object id { get; set; }
+            public string name { get; set; }
+        }
+
+        public class Article
+        {
+            public Source source { get; set; }
+            public string author { get; set; }
+            public string title { get; set; }
+            public string description { get; set; }
+            public string url { get; set; }
+            public string urlToImage { get; set; }
+            public string publishedAt { get; set; }
+            public string content { get; set; }
         }
 
 
@@ -45,6 +107,48 @@ namespace TryItPage
 
             // Use a for loop to iterate through the array
             TextBox2.Text = string.Join("\n\n", stringArray);
+        }
+
+        protected void btnSubmit_Click2(object sender, EventArgs e)
+        {
+            if (fileUpload.HasFile)
+            {
+                // Read the content of the uploaded file into a string
+                using (StreamReader reader = new StreamReader(fileUpload.PostedFile.InputStream))
+                {
+                    // Initialize a StringBuilder to store all words
+                    StringBuilder allWords = new StringBuilder();
+
+                    while (!reader.EndOfStream)
+                    {
+                        string line = reader.ReadLine();
+                        if (!string.IsNullOrEmpty(line))
+                        {
+                            // Split the line into words
+                            string[] words = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                            // Append the words to the StringBuilder
+                            foreach (string word in words)
+                            {
+                                allWords.Append(word);
+                                allWords.Append(" "); // Add a space between words
+                            }
+                        }
+                    }
+
+                    // Now, you can use the 'allWords' variable to work with all the words in the uploaded file
+                    string allWordsText = allWords.ToString();
+                    WordCountServiceReference.Service1Client client = new WordCountServiceReference.Service1Client();
+                    string jsonResult = client.GetData(allWordsText);
+                    //Response.Write(allWordsText);
+                    //Response.Write(jsonResult);
+                    txtDisplay.Text = jsonResult;
+                }
+            }
+            else
+            {
+                Response.Write("No file selected.");
+            }
         }
     }
 }

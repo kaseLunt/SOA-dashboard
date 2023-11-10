@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="3df4a79b-e593-49dd-8e3e-41c805ba08fa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50060/TrendingNewsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TrendingNewsService.wsdl" MetadataType="Wsdl" ID="3dced991-0524-4f7c-9b90-b31b01eac1d0" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?wsdl" />
+    <MetadataFile FileName="TrendingNewsService.disco" MetadataType="Disco" ID="33777d12-46ff-447e-8433-c7efe1d7f187" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?disco" />
+    <MetadataFile FileName="TrendingNewsService.xsd" MetadataType="Schema" ID="c8a11e4e-194a-4f39-a93e-f50c88f35a2a" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TrendingNewsService1.xsd" MetadataType="Schema" ID="6ef3a891-5423-4a81-b192-88d4081114a3" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TrendingNewsService2.xsd" MetadataType="Schema" ID="cea7de37-fe64-4b59-9bbb-d879ebdc5911" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
