@@ -8,3 +8,67 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace Client.WordCountServiceReference {
+    
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WordCountServiceReference.IService1")]
+    public interface IService1 {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        string GetData(string filePath);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
+        System.Threading.Tasks.Task<string> GetDataAsync(string filePath);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
+        WordCountService.CompositeType GetDataUsingDataContract(WordCountService.CompositeType composite);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
+        System.Threading.Tasks.Task<WordCountService.CompositeType> GetDataUsingDataContractAsync(WordCountService.CompositeType composite);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IService1Channel : Client.WordCountServiceReference.IService1, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class Service1Client : System.ServiceModel.ClientBase<Client.WordCountServiceReference.IService1>, Client.WordCountServiceReference.IService1 {
+        
+        public Service1Client() {
+        }
+        
+        public Service1Client(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public string GetData(string filePath) {
+            return base.Channel.GetData(filePath);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetDataAsync(string filePath) {
+            return base.Channel.GetDataAsync(filePath);
+        }
+        
+        public WordCountService.CompositeType GetDataUsingDataContract(WordCountService.CompositeType composite) {
+            return base.Channel.GetDataUsingDataContract(composite);
+        }
+        
+        public System.Threading.Tasks.Task<WordCountService.CompositeType> GetDataUsingDataContractAsync(WordCountService.CompositeType composite) {
+            return base.Channel.GetDataUsingDataContractAsync(composite);
+        }
+    }
+}

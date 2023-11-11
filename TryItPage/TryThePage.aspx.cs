@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using TryItPage.WeatherServiceReference;
-using TryItPage.NewsServiceReference;
 using TrendingNewsService;
 using System.IO;
 using System.Text;
@@ -25,15 +24,16 @@ namespace TryItPage
 
         protected void btnSubmit_Click3(object sender, EventArgs e)
         {
+            try
+            {
                 TrendingNewsServiceClient client = new TrendingNewsServiceClient();
                 string jsonData = client.GetTrendingNews();
 
                 if (!string.IsNullOrEmpty(jsonData))
                 {
-                
                     // Deserialize JSON to C# object
                     JavaScriptSerializer serializer = new JavaScriptSerializer();
-        RootObject data = serializer.Deserialize<RootObject>(jsonData);
+                    RootObject data = serializer.Deserialize<RootObject>(jsonData);
 
                     if (data != null && data.articles != null)
                     {
@@ -47,10 +47,17 @@ namespace TryItPage
                     }
                 }
                 else
-{
-    lblMessage.Text = "Failed to fetch news data.";
-}
+                {
+                    lblMessage.Text = "No data received from the service.";
+                }
             }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it as needed
+                lblMessage.Text = "An error occurred: " + ex.Message;
+            }
+        }
+
 
 
         public class RootObject
@@ -99,7 +106,7 @@ namespace TryItPage
             string keywords = TextBox1.Text;
 
             // Create a greeting message
-            TryItPage.NewsServiceReference.NewsSearchServiceClient client = new NewsServiceReference.NewsSearchServiceClient();
+            TrendingNewsServiceClient client = new TrendingNewsServiceClient();
             var urls = client.GetNews(keywords);
 
             // Display the greeting message in the result textbox

@@ -26,7 +26,6 @@ C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\NewsSearch
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TrendingNewsService.dll
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TryItPage.dll
-C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WeatherService.dll
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WordCountService.dll
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\System.Web.Optimization.dll
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\Microsoft.AspNet.FriendlyUrls.dll
@@ -39,8 +38,6 @@ C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TrendingNe
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TrendingNewsService.dll.config
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TryItPage.pdb
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\TryItPage.dll.config
-C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WeatherService.pdb
-C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WeatherService.dll.config
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WordCountService.pdb
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\WordCountService.dll.config
 C:\Users\Administrator\source\repos\SOA-dashboard-js\Client\bin\Debug\HtmlAgilityPack.pdb

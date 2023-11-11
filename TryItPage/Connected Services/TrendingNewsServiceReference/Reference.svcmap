@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="9ef335d6-218c-48cb-b598-1d26b576d846" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f9a0624e-ecd7-467d-a8ac-27152e67a521" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:50060/TrendingNewsService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="TrendingNewsService.wsdl" MetadataType="Wsdl" ID="b96861d6-52a3-496b-a6a7-9d85becb8a91" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?wsdl" />
-    <MetadataFile FileName="TrendingNewsService.disco" MetadataType="Disco" ID="fd945d31-b794-4386-82f0-96cc962cc2e4" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?disco" />
-    <MetadataFile FileName="TrendingNewsService.xsd" MetadataType="Schema" ID="456ee5da-c549-41a1-aeb9-2ce5a95972e8" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd2" />
-    <MetadataFile FileName="TrendingNewsService1.xsd" MetadataType="Schema" ID="16fdbe1c-86b5-4693-ac92-34486f55fe62" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd1" />
-    <MetadataFile FileName="TrendingNewsService2.xsd" MetadataType="Schema" ID="c603fe59-6c39-424b-acea-65aaf3728a86" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TrendingNewsService.wsdl" MetadataType="Wsdl" ID="03ad6919-6e50-47f1-bf8e-a52df1063018" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?wsdl" />
+    <MetadataFile FileName="TrendingNewsService.disco" MetadataType="Disco" ID="47611368-0494-43b1-8c81-7502df186fef" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?disco" />
+    <MetadataFile FileName="TrendingNewsService.xsd" MetadataType="Schema" ID="901bb09d-bfd9-4a2d-84a4-45763e334b5d" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TrendingNewsService1.xsd" MetadataType="Schema" ID="57146b27-6a9c-4dee-8d03-c08a87c80d7a" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TrendingNewsService2.xsd" MetadataType="Schema" ID="a0089198-a238-40cd-8987-913176597182" SourceId="1" SourceUrl="http://localhost:50060/TrendingNewsService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

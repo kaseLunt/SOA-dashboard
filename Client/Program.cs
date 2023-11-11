@@ -1,9 +1,9 @@
 ﻿
 using Client.WeatherServiceRef;
-using Client.NewsSearchServiceRef;
 using System;
 using System.IO;
 using System.Net;
+using TryItPage.TrendingNewsServiceReference;
 
 namespace Client
 {
@@ -14,7 +14,7 @@ namespace Client
             // Test NewsSearchService
             Console.Write("Enter a search term for news: ");
             string searchString = Console.ReadLine();
-            NewsSearchServiceClient newsClient = new NewsSearchServiceClient();
+            TrendingNewsServiceClient newsClient = new TrendingNewsServiceClient();
 
             var newsLinks = newsClient.GetNews(searchString);
             if (newsLinks != null && newsLinks.Length > 0)

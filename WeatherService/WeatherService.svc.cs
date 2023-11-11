@@ -29,9 +29,11 @@ namespace WeatherService
                     processedDates.Add(date);
                     string weatherDescription = forecast["weather"][0]["description"];
                     double temperatureKelvin = Convert.ToDouble(forecast["main"]["temp"]);
-                    double temperatureCelsius = temperatureKelvin - 273.15;
 
-                    forecasts.Add($"Date: {date}, Weather: {weatherDescription}, Temperature: {temperatureCelsius:0.##}°C");
+                    // Convert temperature to Fahrenheit
+                    double temperatureFahrenheit = (temperatureKelvin - 273.15) * 9 / 5 + 32;
+
+                    forecasts.Add($"Date: {date}, Weather: {weatherDescription}, Temperature: {temperatureFahrenheit:0.##}°F");
                 }
 
                 if (processedDates.Count >= 5) break;

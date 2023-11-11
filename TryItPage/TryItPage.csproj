@@ -140,24 +140,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService.wsdl" />
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NewsServiceReference\NewsSearchService.disco" />
-    <None Include="Connected Services\NewsServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\NewsServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\NewsServiceReference\Reference.svcmap">
+    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.disco" />
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\TrendingNewsServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\TrendingNewsServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Login.aspx" />
+    <Content Include="App_Data\Member.xml" />
+    <Content Include="MemberPage.aspx" />
     <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.wsdl" />
     <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.xsd">
       <SubType>Designer</SubType>
@@ -182,14 +174,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.disco" />
-    <None Include="Connected Services\TrendingNewsServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\TrendingNewsServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\TrendingNewsServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Contact.aspx" />
+    <Content Include="StaffLogin.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -255,9 +240,7 @@
     <None Include="Connected Services\WordCountServiceReference\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\WordCountServiceReference\TryItPage.WordCountServiceReference.CompositeType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
+    <Content Include="Properties\DataSources\WordCountService.CompositeType.datasource" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -293,25 +276,29 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessControl.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\NewsServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
+    <Compile Include="PasswordHasher.cs" />
     <Compile Include="Connected Services\TrendingNewsServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPage.aspx.cs">
+      <DependentUpon>MemberPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberPage.aspx.designer.cs">
+      <DependentUpon>MemberPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Connected Services\WeatherServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -322,12 +309,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="StaffLogin.aspx.cs">
+      <DependentUpon>StaffLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="StaffLogin.aspx.designer.cs">
+      <DependentUpon>StaffLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -370,9 +357,7 @@
     </Compile>
     <Compile Include="WeatherServiceClient.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
@@ -388,7 +373,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\NewsServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\TrendingNewsServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WeatherServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WordCountServiceReference\" />

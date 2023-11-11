@@ -101,11 +101,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\NewsSearchServiceRef\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\TrendingNewsServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -126,16 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService.wsdl" />
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.wsdl" />
     <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.xsd">
       <SubType>Designer</SubType>
@@ -170,7 +155,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\NewsSearchServiceRef\" />
     <WCFMetadataStorage Include="Connected Services\TrendingNewsServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WeatherServiceRef\" />
     <WCFMetadataStorage Include="Connected Services\WordCountServiceReference\" />
@@ -191,21 +175,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\NewsSearchService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\NewsSearchServiceRef\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\NewsSearchService\NewsSearchService.csproj">
       <Project>{7bda0891-e833-4f65-962b-45442e07809f}</Project>
       <Name>NewsSearchService</Name>
@@ -217,10 +186,6 @@
     <ProjectReference Include="..\TryItPage\TryItPage.csproj">
       <Project>{53c9b6cb-7a38-4d39-9561-61daf2124c5d}</Project>
       <Name>TryItPage</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WeatherService\WeatherService.csproj">
-      <Project>{0aaef10a-b2b6-4d56-8c7f-da3eb5ec4069}</Project>
-      <Name>WeatherService</Name>
     </ProjectReference>
     <ProjectReference Include="..\WordCountService\WordCountService.csproj">
       <Project>{a497b5f8-e6b0-468a-9282-f569df460a8a}</Project>
@@ -243,6 +208,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Connected Services\TrendingNewsServiceReference\TrendingNewsService.disco" />
   </ItemGroup>
   <ItemGroup>
@@ -256,18 +233,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
